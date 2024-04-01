@@ -29,6 +29,7 @@ namespace LeaveManagement.Web
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             builder.Services.AddScoped(typeof(ILeaveTypeRepository), typeof(LeaveTypeRepository));
+            builder.Services.AddScoped(typeof(ILeaveAllocationRepository), typeof(LeaveAllocationRepository));
 
             builder.Services.AddAutoMapper(typeof(MapperConfig));
 
